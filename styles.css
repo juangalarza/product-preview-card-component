@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
+body {
+  font-family: 'Monteserrat', sans-serif;
+ height: 100%;
+  background-color: #f2e9e2;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 640px;
+  height: 480px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img {
+  overflow: hidden;
+  display: flex;
+  width: 50%;
+}
+.card-product {
+ 
+  padding: 40px;
+  width: 240px;
+}
+.card-badge {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: gray;
+}
+h2 {
+  margin-top: 10px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 30px;
+}
+.card-resume p {
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: hsl(228, 12%, 48%);
+}
+.card-price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-price-now {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 32px;
+}
+.card-price-before {
+  display: flex;
+  margin-left: 20px;
+  color: gray;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(158, 36%, 37%);
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+}
+.btnIcon {
+  width: 15px;
+  height: auto;
+  padding: 0 10px;
+}
+
+button :hover {
+  cursor: pointer;
+}
+
+@media (max-width: 650px){
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin: 50px;
+  }
+  .card-img {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    overflow: unset;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .card-product {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 20px 15px;
+
+    
+  }
+}
